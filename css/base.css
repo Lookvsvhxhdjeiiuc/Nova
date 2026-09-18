@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --color-cream: #f7f3ec;
+  --color-cream-alt: #efe3d4;
+  --color-dark: #1b1917;
+  --color-gold: #c8a15c;
+  --color-text: #2b2620;
+  --color-text-muted: #6b6459;
+  --color-border: #e3d9c8;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+  --container-padding: 20px;
+  --max-width: 1240px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-cream);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.eyebrow {
+  color: var(--color-gold);
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section {
+  padding-block: 56px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --container-padding: 32px;
+  }
+
+  .section {
+    padding-block: 72px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .section {
+    padding-block: 96px;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}

@@ -1,0 +1,7 @@
+[
+  { "id": 1, "image": "assets/images/gallery/gal-1.jpg", "alt": "Kort, bølget frisure" },
+  { "id": 2, "image": "assets/images/gallery/gal-2.jpg", "alt": "Moderne herreklip" },
+  { "id": 3, "image": "assets/images/gallery/gal-3.jpg", "alt": "Langt bølget hår i solnedgang" },
+  { "id": 4, "image": "assets/images/gallery/gal-4.jpg", "alt": "Bløde bølger" },
+  { "id": 5, "image": "assets/images/gallery/gal-5.jpg", "alt": "Blond glat hår" }
+]

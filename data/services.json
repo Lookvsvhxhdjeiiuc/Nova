@@ -1,0 +1,44 @@
+[
+  {
+    "id": "klipning",
+    "name": "Klipning",
+    "price": 350,
+    "durationMinutes": 45,
+    "description": "Klassisk eller moderne klipning tilpasset dit ansigt og din hårtype."
+  },
+  {
+    "id": "herreklip",
+    "name": "Herreklip",
+    "price": 300,
+    "durationMinutes": 30,
+    "description": "Professionel herreklip og styling med sans for detaljen."
+  },
+  {
+    "id": "dameklip",
+    "name": "Dameklip",
+    "price": 450,
+    "durationMinutes": 60,
+    "description": "Klipning, vask og personlig styling med fokus på dine ønsker."
+  },
+  {
+    "id": "farvning",
+    "name": "Farvning",
+    "price": 600,
+    "durationMinutes": 90,
+    "description": "Helfarve eller reflekser. Vi finder den perfekte tone til dit hår."
+  },
+  {
+    "id": "styling",
+    "name": "Styling",
+    "price": 300,
+    "durationMinutes": 30,
+    "description": "Opsætning eller professionel føntørring til både hverdag og fest."
+  },
+  {
+    "id": "haarpleje",
+    "name": "Hårpleje",
+    "price": 200,
+    "durationMinutes": 30,
+    "description": "Nærende kurbehandling der genopbygger og styrker dit hår."
+  }
+]

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA — Frisørsalon i København</title>
+  <meta name="description" content="NOVA er en personlig frisørsalon i hjertet af København. Book din tid online.">
+
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/hero.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="./css/booking.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__logo">NOVA</div>
+    <nav class="site-header__nav" aria-label="Hovedmenu">
+      <a href="#hero">FORSIDE</a>
+      <a href="#services">YDELSER</a>
+      <a href="#about">OM MIG</a>
+      <a href="#gallery">GALLERI</a>
+      <a href="#contact">KONTAKT</a>
+    </nav>
+    <div class="site-header__actions">
+      <a href="#booking" class="btn-book">Book tid</a>
+      <button type="button" class="burger" id="menu-open" aria-label="Åbn menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="mobile-menu-panel">
+    <div class="menu-overlay__header">
+      <div class="menu-overlay__logo">NOVA</div>
+      <button type="button" class="menu-overlay__close" id="menu-close" aria-label="Luk menu">✕</button>
+    </div>
+    <div class="menu-overlay__body">
+      <nav class="menu-overlay__links" aria-label="Mobilmenu">
+        <a href="#hero">FORSIDE</a>
+        <a href="#services">YDELSER</a>
+        <a href="#about">OM MIG</a>
+        <a href="#gallery">GALLERI</a>
+        <a href="#contact">KONTAKT</a>
+      </nav>
+      <div class="menu-overlay__bottom">
+        <a href="#booking" class="menu-overlay__cta">Book din tid</a>
+        <div class="menu-overlay__contact">
+          <span>Nørrebrogade 42, 2200 København N<br>+45 12 34 56 78</span>
+          <span class="footer-socials">📷 📘</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero__media">
+        <img src="./assets/images/hero/hero.jpg" alt="Interiør på NOVA salon" loading="eager">
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">Dit hår. Din stil.</h1>
+        <p class="hero__text">Personlig hårpleje og moderne frisurer til kvinder og mænd. Oplev skandinavisk præcision og ro i hjertet af København.</p>
+        <div class="hero__actions">
+          <a href="#booking" class="btn-primary">Book din tid</a>
+          <a href="#gallery" class="btn-outline">Se galleri</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="eyebrow">Ydelser</p>
+        <h2>Alt til dit hår</h2>
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about__photo">
+          <img src="./assets/images/about/about.jpg" alt="Frisøren fra NOVA" loading="lazy">
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">Om mig</p>
+          <h2 class="about__title">Din personlige frisør</h2>
+          <p class="about__lead">Med over 10 års erfaring tilbyder jeg personlig og professionel hårpleje i hjertet af byen. Hos NOVA handler det om dig — dit hår, din stil og din oplevelse. Jeg tager mig god tid til at lytte og rådgive, så vi sammen opnår det bedste resultat.</p>
+          <div class="about__checklist">
+            <div class="checklist-item">
+              <span class="checklist-item__mark">✓</span>
+              <div><b>Personlig service</b><p>En skræddersyet oplevelse, hvor dit hår er i fokus hele vejen.</p></div>
+            </div>
+            <div class="checklist-item">
+              <span class="checklist-item__mark">✓</span>
+              <div><b>Høj kvalitet</b><p>Kun brug af udvalgte professionelle, skandinaviske plejeprodukter.</p></div>
+            </div>
+            <div class="checklist-item">
+              <span class="checklist-item__mark">✓</span>
+              <div><b>Tid til dig</b><p>Ingen stress eller jag. Der er sat god tid til hver enkelt behandling.</p></div>
+            </div>
+          </div>
+          <a href="#contact" class="about__link">Læs mere om mig →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <p class="eyebrow">Galleri</p>
+        <h2>Inspiration</h2>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking">
+      <div class="container">
+        <p class="eyebrow">Online booking</p>
+        <h2 class="booking__title">Klar til en ny frisure?</h2>
+        <p class="booking__text">Book din tid online — hurtigt og nemt. Vælg behandling, dato og tidspunkt herunder.</p>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <div class="field">
+            <label for="booking-service">Behandling</label>
+            <select id="booking-service" name="service" required>
+              <option value="">Vælg behandling...</option>
+            </select>
+          </div>
+
+          <div class="booking-form__row">
+            <div class="field">
+              <label for="booking-date">Dato</label>
+              <input type="date" id="booking-date" name="date" required>
+            </div>
+            <div class="field">
+              <label for="booking-time">Tid</label>
+              <select id="booking-time" name="time" required disabled>
+                <option value="">Vælg dato først...</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="booking-form__row">
+            <div class="field">
+              <label for="booking-name">Navn</label>
+              <input type="text" id="booking-name" name="name" placeholder="Dit fulde navn..." required>
+            </div>
+            <div class="field">
+              <label for="booking-phone">Telefon</label>
+              <input type="tel" id="booking-phone" name="phone" placeholder="+45 Telefonnummer..." required>
+            </div>
+          </div>
+
+          <button type="submit" class="booking-form__submit">Book din tid</button>
+          <p class="booking-feedback" id="booking-feedback" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="booking-list" id="booking-list"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2 class="contact__title">Find os</h2>
+
+          <div class="info-block">
+            <span class="info-block__icon">📍</span>
+            <div>
+              <div class="info-block__label">Adresse</div>
+              <div class="info-block__value">Nørrebrogade 42, 2200 København N</div>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <span class="info-block__icon">📞</span>
+            <div>
+              <div class="info-block__label">Telefon / Email</div>
+              <div class="info-block__value">+45 12 34 56 78<br>hej@nova.dk</div>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <span class="info-block__icon">🕐</span>
+            <div>
+              <div class="info-block__label">Åbningstider</div>
+              <div class="info-block__value">
+                Mandag - Fredag &nbsp; 09:00 – 18:00<br>
+                Lørdag &nbsp; 10:00 – 16:00<br>
+                Søndag &nbsp; Lukket
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="map-box"><span>📍</span><span>Vis kort</span></div>
+          <div class="store-photo">
+            <img src="./assets/images/storefront/storefront.jpg" alt="Facade på NOVA salon" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">NOVA</div>
+        <p class="footer-tagline">Personlig frisør til kvinder og mænd. Eksklusiv skandinavisk salonoplevelse.</p>
+        <div class="footer-socials">📷 📘</div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer-menu">
+        <a href="#hero">FORSIDE</a>
+        <a href="#services">YDELSER</a>
+        <a href="#about">OM MIG</a>
+        <a href="#gallery">GALLERI</a>
+        <a href="#contact">KONTAKT</a>
+      </nav>
+      <div class="footer-contact">
+        <div>hej@nova.dk</div>
+        <div>+45 XX XX XX</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 NOVA. Alle rettigheder forbeholdes.</div>
+      <div>Cvr: 9876543210</div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
